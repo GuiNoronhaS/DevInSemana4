@@ -69,9 +69,13 @@ function exercicio4() {
 //Exercicio 4 - 5
 function exercicio5() {
     const pessoasMap = arrayPessoas.map(pessoa => pessoa.nome);
-    console.log("Exercicio 4 - Pessoas: ", pessoasMap)
+    console.log("Exercicio 5 - Pessoas: ", pessoasMap)
 }
 //Exercicio 4 - 6
+function exercicio5() {
+    const pessoasIdadeMap = arrayPessoas.filter(pessoa => pessoa.idade < 18);
+    console.log("Exercicio 6 - Pessoas: ", pessoasIdadeMap)
+}
 //Exercicio 4 - 7
 //Exercicio 4 - 8
 //Exercicio 4 - 9
