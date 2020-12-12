@@ -38,6 +38,7 @@ window.onload = function(){
     exercicio2();
     exercicio3();
     exercicio4();
+    exercicio5();
     }
 
 //Exercicio 4 - 1
@@ -66,6 +67,10 @@ function exercicio4() {
     console.log("Exercicio 4 - Profissao: ", resultado)
 }
 //Exercicio 4 - 5
+function exercicio5() {
+    const pessoasMap = arrayPessoas.map(pessoa => pessoa.nome);
+    console.log("Exercicio 4 - Pessoas: ", pessoasMap)
+}
 //Exercicio 4 - 6
 //Exercicio 4 - 7
 //Exercicio 4 - 8
