@@ -36,6 +36,8 @@ let arrayPessoas = [
 window.onload = function(){
     exercicio1();
     exercicio2();
+    exercicio3();
+    exercicio4();
     }
 
 //Exercicio 4 - 1
@@ -59,7 +61,7 @@ function exercicio3() {
     console.log("Exercicio 3 - Idade: ", resultado)
 }
 //Exercicio 4 - 4
-function exercicio3() {
+function exercicio4() {
     let resultado = arrayPessoas.every(pessoa => pessoa.profissao === "Programador");
     console.log("Exercicio 4 - Profissao: ", resultado)
 }
