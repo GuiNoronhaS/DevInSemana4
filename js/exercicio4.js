@@ -39,6 +39,8 @@ window.onload = function(){
     exercicio3();
     exercicio4();
     exercicio5();
+    exercicio6();
+    exercicio7();
     }
 
 //Exercicio 4 - 1
@@ -72,11 +74,15 @@ function exercicio5() {
     console.log("Exercicio 5 - Pessoas: ", pessoasMap)
 }
 //Exercicio 4 - 6
-function exercicio5() {
+function exercicio6() {
     const pessoasIdadeMap = arrayPessoas.filter(pessoa => pessoa.idade < 18);
     console.log("Exercicio 6 - Pessoas: ", pessoasIdadeMap)
 }
 //Exercicio 4 - 7
+function exercicio7() {
+    const pessoaIdade = arrayPessoas.find(pessoa => pessoa.idade > 18);
+    console.log("Exercicio 7 - Pessoas: ", pessoaIdade)
+}
 //Exercicio 4 - 8
 //Exercicio 4 - 9
 //Exercicio 4 - 10
