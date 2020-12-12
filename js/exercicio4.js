@@ -59,6 +59,10 @@ function exercicio3() {
     console.log("Exercicio 3 - Idade: ", resultado)
 }
 //Exercicio 4 - 4
+function exercicio3() {
+    let resultado = arrayPessoas.every(pessoa => pessoa.profissao === "Programador");
+    console.log("Exercicio 4 - Profissao: ", resultado)
+}
 //Exercicio 4 - 5
 //Exercicio 4 - 6
 //Exercicio 4 - 7
