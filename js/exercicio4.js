@@ -33,6 +33,11 @@ let arrayPessoas = [
     },
 ]
 
+let objetoRetangulo = {
+    altura: 10,
+    largura: 5,
+};
+
 window.onload = function () {
     exercicio1();
     exercicio2();
@@ -44,7 +49,7 @@ window.onload = function () {
     exercicio8();
     exercicio9();
     exercicio10();
-    //exercicio11();
+    exercicio11();
     //exercicio12();
     //exercicio13();
     //exercicio14();
@@ -117,7 +122,6 @@ function retornaPromise(valor1, valor2) {
             reject("Exercicio 10 - Rejeitado - O valor é Impar!");
         }
     })
-
 }
 function exercicio10() {
     retornaPromise(2,2).then(
@@ -128,9 +132,12 @@ function exercicio10() {
         result => console.log(result),
         error => console.log(error)
     );
-
 } 
 //Exercicio 4 - 11
+function exercicio11() {
+    let areaR = (Retangulo) => Retangulo.altura * Retangulo.largura;
+    console.log("Exercicio 11 - Area do retangulo: " + areaR(objetoRetangulo));
+}
 //Exercicio 4 - 12
 //Exercicio 4 - 13
 //Exercicio 4 - 14
