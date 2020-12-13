@@ -57,6 +57,10 @@ let arrayCidades = [
         nome: "Biguaçu",
         estado: "SC"
     },
+    {
+        nome: "Porto Alegre",
+        estado: "RS"
+    },
 ]
 
 window.onload = function () {
@@ -74,7 +78,7 @@ window.onload = function () {
     exercicio12();
     exercicio13();
     exercicio14();
-    //exercicio15();
+    exercicio15();
     //exercicio16();
     //exercicio17();
 }
@@ -173,6 +177,10 @@ function exercicio13() {
 let retornaString = (listCidade) => listCidade.map(cidade => `${cidade.nome}, ${cidade.estado}`);
 function exercicio14() {
     console.log("Exercicio 14 - Resultado da concatenacao: ", retornaString(arrayCidades))
+}
+let retornaRS = (listCidade) => listCidade.some(cidade => cidade.estado == 'RS');
+function exercicio15() {
+    console.log("Exercicio 15 - Resultado cidade em RS: ", retornaRS(arrayCidades))
 }
 //Exercicio 4 - 15
 //Exercicio 4 - 16
