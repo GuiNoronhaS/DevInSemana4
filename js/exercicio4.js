@@ -80,7 +80,7 @@ window.onload = function () {
     exercicio14();
     exercicio15();
     exercicio16();
-    //exercicio17();
+    exercicio17();
 }
 
 //Exercicio 4 - 1
@@ -134,14 +134,14 @@ const apresentar = (nome, idade) => {
 };
 function exercicio9() {
     for (let i = 0; i < arrayPessoas.length; i++) {
-        apresentar(arrayPessoas[i].nome,arrayPessoas[i].idade)
+        apresentar(arrayPessoas[i].nome, arrayPessoas[i].idade)
     }
 }
 //Exercicio 4 - 10
 function retornaPromise(valor1, valor2) {
-    return new Promise((resolve,reject) => {
+    return new Promise((resolve, reject) => {
         let resultado = valor1 + valor2;
-        if(resultado % 2 == 0) {
+        if (resultado % 2 == 0) {
             resolve("Exercicio 10 - Resolvido - O valor é par: " + resultado);
         } else {
             reject("Exercicio 10 - Rejeitado - O valor é Impar!");
@@ -149,24 +149,24 @@ function retornaPromise(valor1, valor2) {
     })
 }
 function exercicio10() {
-    retornaPromise(2,2).then(
+    retornaPromise(2, 2).then(
         result => console.log(result),
         error => console.log(error)
     );
-    retornaPromise(1,2).then(
+    retornaPromise(1, 2).then(
         result => console.log(result),
         error => console.log(error)
     );
-} 
+}
 //Exercicio 4 - 11
 function exercicio11() {
     let areaR = (Retangulo) => Retangulo.altura * Retangulo.largura;
     console.log("Exercicio 11 - Area do retangulo: " + areaR(objetoRetangulo));
 }
 //Exercicio 4 - 12
-let showEndereco = (bairro,cidade,estado) => `Endereco: ${bairro}, ${cidade}, ${estado}`;
+let showEndereco = (bairro, cidade, estado) => `Endereco: ${bairro}, ${cidade}, ${estado}`;
 function exercicio12() {
-    console.log("Exercicio 12 - Resultado", showEndereco("Estreito","Florianopolis","Santa Catarina"));
+    console.log("Exercicio 12 - Resultado", showEndereco("Estreito", "Florianopolis", "Santa Catarina"));
 }
 //Exercicio 4 - 13
 let retornaListaSC = (listCidade) => listCidade.filter(cidade => cidade.estado == "SC");
@@ -184,17 +184,27 @@ function exercicio15() {
     console.log("Exercicio 15 - Resultado cidade em RS: ", retornaRS(arrayCidades))
 }
 //Exercicio 4 - 16
-function desmontar(listCidade){
+function desmontar(listCidade) {
     let desmontarNome;
     let desmontarEstado;
     listCidade.forEach(element => {
         desmontarNome = element.nome;
         desmontarEstado = element.estado;
-        console.log("Exercicio 16 - variaveis desmontadas: ", desmontarNome,desmontarEstado);
+        console.log("Exercicio 16 - variaveis desmontadas: ", desmontarNome, desmontarEstado);
     });
-    console.log("Exercicio 16 - Ultimo valor das variaveis: ", desmontarNome,desmontarEstado)
+    console.log("Exercicio 16 - Ultimo valor das variaveis: ", desmontarNome, desmontarEstado)
 };
 function exercicio16() {
     desmontar(arrayCidades);
 }
 //Exercicio 4 - 17
+function ranking(a,b,c, ...resto) {
+    let pos1 = `Posicao 1 = ${a}
+    Posicao 2 = ${b}
+    Posicao 3 = ${c}
+    Demais = ${resto}`
+    console.log("Exercicio 17 - Ranking: ", pos1);
+};
+function exercicio17() {
+    ranking("Livro 1", "Livro 2", "Livro 3", "Livro 4", "Livro 5", "Livro 6", "Livro 7", "Livro 8", "Livro 9", "Livro 10");
+}
