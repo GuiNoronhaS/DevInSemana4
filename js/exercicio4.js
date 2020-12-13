@@ -43,7 +43,7 @@ window.onload = function () {
     exercicio7();
     exercicio8();
     exercicio9();
-    //exercicio10();
+    exercicio10();
     //exercicio11();
     //exercicio12();
     //exercicio13();
@@ -108,6 +108,28 @@ function exercicio9() {
     }
 }
 //Exercicio 4 - 10
+function retornaPromise(valor1, valor2) {
+    return new Promise((resolve,reject) => {
+        let resultado = valor1 + valor2;
+        if(resultado % 2 == 0) {
+            resolve("Exercicio 10 - Resolvido - O valor é par: " + resultado);
+        } else {
+            reject("Exercicio 10 - Rejeitado - O valor é Impar!");
+        }
+    })
+
+}
+function exercicio10() {
+    retornaPromise(2,2).then(
+        result => console.log(result),
+        error => console.log(error)
+    );
+    retornaPromise(1,2).then(
+        result => console.log(result),
+        error => console.log(error)
+    );
+
+} 
 //Exercicio 4 - 11
 //Exercicio 4 - 12
 //Exercicio 4 - 13
