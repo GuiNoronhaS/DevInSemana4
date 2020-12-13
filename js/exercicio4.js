@@ -41,6 +41,16 @@ window.onload = function(){
     exercicio5();
     exercicio6();
     exercicio7();
+    exercicio8();
+    //exercicio9();
+    //exercicio10();
+    //exercicio11();
+    //exercicio12();
+    //exercicio13();
+    //exercicio14();
+    //exercicio15();
+    //exercicio16();
+    //exercicio17();
     }
 
 //Exercicio 4 - 1
@@ -84,6 +94,10 @@ function exercicio7() {
     console.log("Exercicio 7 - Pessoas: ", pessoaIdade)
 }
 //Exercicio 4 - 8
+function exercicio8() {
+    const resultadoMult = arrayNumeros.reduce((acumular, valorInicial) => acumular * valorInicial);
+    console.log("Exercicio 8 - Resultado da Multiplicacao: ", resultadoMult);
+}
 //Exercicio 4 - 9
 //Exercicio 4 - 10
 //Exercicio 4 - 11
