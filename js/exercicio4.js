@@ -50,7 +50,7 @@ window.onload = function () {
     exercicio9();
     exercicio10();
     exercicio11();
-    //exercicio12();
+    exercicio12();
     //exercicio13();
     //exercicio14();
     //exercicio15();
@@ -139,6 +139,10 @@ function exercicio11() {
     console.log("Exercicio 11 - Area do retangulo: " + areaR(objetoRetangulo));
 }
 //Exercicio 4 - 12
+let showEndereco = (bairro,cidade,estado) => `Endereco: ${bairro}, ${cidade}, ${estado}`;
+function exercicio12() {
+    console.log("Exercicio 12 - Resultado", showEndereco("Estreito","Florianopolis","Santa Catarina"));
+}
 //Exercicio 4 - 13
 //Exercicio 4 - 14
 //Exercicio 4 - 15
