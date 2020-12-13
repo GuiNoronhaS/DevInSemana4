@@ -79,7 +79,7 @@ window.onload = function () {
     exercicio13();
     exercicio14();
     exercicio15();
-    //exercicio16();
+    exercicio16();
     //exercicio17();
 }
 
@@ -178,10 +178,23 @@ let retornaString = (listCidade) => listCidade.map(cidade => `${cidade.nome}, ${
 function exercicio14() {
     console.log("Exercicio 14 - Resultado da concatenacao: ", retornaString(arrayCidades))
 }
+//Exercicio 4 - 15
 let retornaRS = (listCidade) => listCidade.some(cidade => cidade.estado == 'RS');
 function exercicio15() {
     console.log("Exercicio 15 - Resultado cidade em RS: ", retornaRS(arrayCidades))
 }
-//Exercicio 4 - 15
 //Exercicio 4 - 16
+function desmontar(listCidade){
+    let desmontarNome;
+    let desmontarEstado;
+    listCidade.forEach(element => {
+        desmontarNome = element.nome;
+        desmontarEstado = element.estado;
+        console.log("Exercicio 16 - variaveis desmontadas: ", desmontarNome,desmontarEstado);
+    });
+    console.log("Exercicio 16 - Ultimo valor das variaveis: ", desmontarNome,desmontarEstado)
+};
+function exercicio16() {
+    desmontar(arrayCidades);
+}
 //Exercicio 4 - 17
