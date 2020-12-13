@@ -32,11 +32,32 @@ let arrayPessoas = [
         profissao: "Programador",
     },
 ]
-
 let objetoRetangulo = {
     altura: 10,
     largura: 5,
 };
+let arrayCidades = [
+    {
+        nome: "Florianópolis",
+        estado: "SC"
+    },
+    {
+        nome: "São Paulo",
+        estado: "SP"
+    },
+    {
+        nome: "Palhoça",
+        estado: "SC"
+    },
+    {
+        nome: "Belo Horizonte",
+        estado: "MG"
+    },
+    {
+        nome: "Biguaçu",
+        estado: "SC"
+    },
+]
 
 window.onload = function () {
     exercicio1();
@@ -51,8 +72,8 @@ window.onload = function () {
     exercicio10();
     exercicio11();
     exercicio12();
-    //exercicio13();
-    //exercicio14();
+    exercicio13();
+    exercicio14();
     //exercicio15();
     //exercicio16();
     //exercicio17();
@@ -144,7 +165,15 @@ function exercicio12() {
     console.log("Exercicio 12 - Resultado", showEndereco("Estreito","Florianopolis","Santa Catarina"));
 }
 //Exercicio 4 - 13
+let retornaListaSC = (listCidade) => listCidade.filter(cidade => cidade.estado == "SC");
+function exercicio13() {
+    console.log("Exercicio 13 - Retorno da lista de cidades de SC: ", retornaListaSC(arrayCidades))
+}
 //Exercicio 4 - 14
+let retornaString = (listCidade) => listCidade.map(cidade => `${cidade.nome}, ${cidade.estado}`);
+function exercicio14() {
+    console.log("Exercicio 14 - Resultado da concatenacao: ", retornaString(arrayCidades))
+}
 //Exercicio 4 - 15
 //Exercicio 4 - 16
 //Exercicio 4 - 17
