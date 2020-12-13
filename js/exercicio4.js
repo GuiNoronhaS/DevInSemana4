@@ -1,5 +1,5 @@
-let arrayNotas = [9, 9 ,6];
-let arrayNumeros = [2,3,4,5,6,7,8,9,10];
+let arrayNotas = [9, 9, 6];
+let arrayNumeros = [2, 3, 4, 5, 6, 7, 8, 9, 10];
 let arrayPessoas = [
     {
         nome: "Guilherme",
@@ -33,7 +33,7 @@ let arrayPessoas = [
     },
 ]
 
-window.onload = function(){
+window.onload = function () {
     exercicio1();
     exercicio2();
     exercicio3();
@@ -42,7 +42,7 @@ window.onload = function(){
     exercicio6();
     exercicio7();
     exercicio8();
-    //exercicio9();
+    exercicio9();
     //exercicio10();
     //exercicio11();
     //exercicio12();
@@ -51,7 +51,7 @@ window.onload = function(){
     //exercicio15();
     //exercicio16();
     //exercicio17();
-    }
+}
 
 //Exercicio 4 - 1
 function exercicio1() {
@@ -61,7 +61,7 @@ function exercicio1() {
         nElement++;
         Media += element;
     });
-    console.log("Exercicio 1 - Media", (Media/nElement));
+    console.log("Exercicio 1 - Media", (Media / nElement));
 }
 //Exercicio 4 - 2
 function exercicio2() {
@@ -99,6 +99,14 @@ function exercicio8() {
     console.log("Exercicio 8 - Resultado da Multiplicacao: ", resultadoMult);
 }
 //Exercicio 4 - 9
+const apresentar = (nome, idade) => {
+    console.log("Exercicio 9 - Ola, eu sou " + nome + " e tenho " + idade + " anos.");
+};
+function exercicio9() {
+    for (let i = 0; i < arrayPessoas.length; i++) {
+        apresentar(arrayPessoas[i].nome,arrayPessoas[i].idade)
+    }
+}
 //Exercicio 4 - 10
 //Exercicio 4 - 11
 //Exercicio 4 - 12
